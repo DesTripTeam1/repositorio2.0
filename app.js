@@ -1,10 +1,13 @@
 const express = require('express')
 const helmet = require("helmet");
-const mysql = require('mysql2')
+const cors = require('cors');
+const mysql = require('mysql2');
 require('dotenv').config()
 
 const app = express()
+app.use(cors());
 app.use(helmet());
+
 
 
 app.use(express.json())
