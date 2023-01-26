@@ -20,6 +20,16 @@ const pool = mysql.createPool({
     port: process.env.DB_PORT,
 })
 
+app.get('/get/ciudades',(req,res) => {
+    let sql = 'SELECT * FROM espana'
+
+    pool.query(sql,(err, rows) => {
+
+        if(err) return res.status(500).send(err)
+
+        res.status(200).json(rows)
+    })
+})
 
 app.get('/get/input',(req,res) => {
     let sql = 'SELECT * FROM input'
