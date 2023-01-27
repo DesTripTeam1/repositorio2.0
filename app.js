@@ -75,7 +75,7 @@ app.post('/travel/output',(req,res) => {
     console.log(req.body)
 
 
-    pool.query(`INSERT INTO output (ID_PROVINCIAS, UBICACION, NOMBRE) VALUES (${provincia}, "${ubicacion}", "${nombre}")`, (err, rows) => {
+    pool.query(`INSERT INTO output (UBICACION, NOMBRE) VALUES ( "${ubicacion}", "${nombre}")`, (err, rows) => {
         if(err) return res.status(500).send(err)
 
         res.status(201).json({message: `datos enviados`})
