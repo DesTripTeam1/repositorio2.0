@@ -10,9 +10,22 @@ Fomentar el turismo español, es uno de nuestros objetivos, ya que es uno de los
 Utilizaremos Chat GPT-3 para proporcionar recomendaciones personalizadas y para responder preguntas sobre los destinos de viajes sugeridos. En resumen, nuestra aplicación web es una herramienta completa para planificar viajes que utiliza la tecnología de última generación para proporcionar recomendaciones personalizadas y ayudar a los usuarios a organizar sus viajes de manera fácil y eficiente. 
 
 ## Estructura
-Los datos utilizados para el análisis se encuentran en el directorio datos. El análisis ha sido realizado utilizando notebooks de Jupiter (directorio notebooks). 
+
+En la carpeta /client se ubica el front-end del proyecto. 
+Dentro de la carpeta /data hay una subcarpeta /data donde se encuentra un archivo .sql para la creación de las bases de datos. En la subcarpeta /media se encuentran el logo y unos gráficos obtenidos. En la subcarpeta /notebook se ubica el notebook de Jupiter utilizado para la visualización. 
+La carpeta /serverDBopcionesForm contiene los datos introducidos por el usuario para la obtención de la recomendación, así como los datos obtenidos a través del ChatGPT.
+En la carpeta /serverDBUsers podemos encontrar los datos introducidos por el usuario al hacer login en la aplicación.
+
+## Herramientas
+
+Base de datos: MySQL
+Visualización: Plotly Express, Leaftlet
+Stack: Mongo, Express, React, Nodejs
+Presentación: Canvas
+
 
 ### Autores
+
 Equipo Full Stack:
 * Fulgencio Díaz
 * Ismael Escalante
