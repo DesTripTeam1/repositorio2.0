@@ -1,0 +1,63 @@
+.btnForm {
+    position: absolute;
+    border: none;
+    outline: none;
+    background: none;
+    z-index: 5;
+    
+}
+
+
+.next{
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color:  rgba(127, 133, 129, 0.8);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: opacity 0.3;
+}
+.next:hover{
+    opacity: 0.8;
+   
+}
+.next-icon,
+.back-icon {
+    top: 25%;
+    color: rgba(226, 238, 230, 0.8);
+    padding: 20px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.next-icon{
+    right: 0;
+}
+.back-icon{
+    left: 0;
+}
+.btnFormResult{
+    cursor: pointer;
+    margin: 12px;
+    font-size: 18px;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 5px;
+    /* width: 120px; */
+    background-color: #cacbcd;
+    transition: all 300ms ease-in-out;
+    box-shadow: 2px 2px 2px black;
+    margin-top: 10px;
+    transition: all 300ms ease-in-out;
+
+}
+.btnFormResult:hover{
+    background-color: #333;
+        color: white;}
+
+        .btnFormResult:visited{
+            background-color: #333;
+                color: white;}

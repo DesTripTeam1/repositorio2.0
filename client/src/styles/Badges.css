@@ -1,0 +1,23 @@
+.CircleT {
+    position: absolute;
+    top: 20px;
+    left: 28%;
+    transform: translateX(-50);
+    z-index: 3;
+    display: flex;
+    list-style: none;
+}
+#CircleR  {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-right: 16px;
+    border-radius: 50%;
+}
+#CircleR :last-child {
+    margin-right: 0;
+}
+#CircleR.controlactive {
+    background-color:rgba(255, 255, 255, 0.644);
+    box-shadow: 0;
+}
